@@ -93,7 +93,14 @@ fastbuild-ue4.26.2-1.04-ue4\UnrealEngine의 4개의 스크립트 파일은 Engin
 
 FASTBuild-Dashboard-master\Source 의 FASTBuild.Dashboard.sln를 빌드한 후 Bin 밑의 실행파일을 실행시키면 현재 연결된 pc와 빌드 상황을 볼수 있다.
 
-만약 안되면 방화벽도 끄고 포트도 열어야한다.
-
 인크레디빌드보단 느리긴 한것같은데 안하는것보단 빠른듯하다
+
+
+# 주의사항
+
+1. 방화벽도 끄고 포트도 열어야한다.
+
+2. 잘되다가 갑자기 안되면 Engine\Intermediate 제거하고 빌드하면 된다.
+
+3. fastbuild 재빌드 하려면 싹다끄고 remote pc의 worker도 끄고 해야 빌드 에러안난다.
 
