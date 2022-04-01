@@ -27,7 +27,8 @@ Host와 Remote를 연결할 공유폴더를 생성 후 공유해주며 공유할
 
 빨간 줄이 그어진곳은 호스트pc의 ip주소이거나 이름이다. 공유된 폴더를 우클릭하여 공유파트를 보면 나온다.
 
-![1648799781](https://user-images.githubusercontent.com/62869017/161221459-3b1f4383-55a3-416d-9b95-3d216b94740f.png)
+
+![1648799781](https://user-images.githubusercontent.com/62869017/161226802-7a38c084-2d5b-4906-a3a8-8d577b974313.png)
 
 
 환경변수에 FASTBUILD_BROKERAGE_PATH를 추가해준다. 공유된 폴더경로이며 로컬 경로가 아닌 네트워크 경로이다. 
