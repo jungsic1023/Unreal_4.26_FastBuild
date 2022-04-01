@@ -23,7 +23,8 @@ Host와 Remote를 연결할 공유폴더를 생성 후 공유해주며 공유할
 ![1648799781](https://user-images.githubusercontent.com/62869017/161221459-3b1f4383-55a3-416d-9b95-3d216b94740f.png)
 
 
-환경변수에 FASTBUILD_BROKERAGE_PATH를 추가해준다. 공유된 폴더경로이며 로컬 경로가 아닌 네트워크 경로이다. EX) \\PC_IP\FASTBUILDShared
+환경변수에 FASTBUILD_BROKERAGE_PATH를 추가해준다. 공유된 폴더경로이며 로컬 경로가 아닌 네트워크 경로이다. 
+EX) \\PC_IP\FASTBUILDShared
 FASTBUILDShared폴더 밑에 Cache 폴더를 생성하고 환경변수에 FASTBUILD_CACHE_PATH로 추가해준다.
 
 이작업은 host와 remote pc 둘다 해줘야하며 두 pc는 이 등록된 경로가 같아야한다. 
