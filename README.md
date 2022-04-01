@@ -14,6 +14,7 @@ Windows SDK - 10.0.22000.0
 언리얼 빌드를 빠르게 하기 위하여 로컬 pc와 remote pc를 연결하여 분산 빌드 하는 시스템
 
 
+
 # 기본 설정
 
 ![1648799929](https://user-images.githubusercontent.com/62869017/161221116-df056c97-b30a-4537-88a3-64ba4a4bc343.png)
@@ -46,6 +47,8 @@ EX) Host pc - FASTBUILD_BROKERAGE_PATH : \\\PC_IP\FASTBUILDShared
 
 FASTBuild-Windows-x64-v1.04또한 환경변수 PATH에 등록하여 어디서든 fbuild를 사용할 수 있도록한다. 등록 후 cmd에 fbuild -version 입력 시 버전이 나오면 된것이다.
 
+
+
 # Fast Build 수정
 
 이제 Fast Build를 사용하기 위해서는 약간의 수정이 필요하다.
@@ -58,6 +61,9 @@ fastbuild-ue4.26.2-1.04-ue4\External\SDK\VisualStudio에서 자신이 사용중�
 Windows Sdk는 옵션이지만 후에 fastbuild 활성화 시에 버전이 다르면 안되기에 windows sdk를 최신으로 설치하여 변경했다.
 
 https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/
+
+
+
 
 # Fast Build 활성화
 
@@ -94,6 +100,8 @@ fastbuild-ue4.26.2-1.04-ue4\UnrealEngine의 4개의 스크립트 파일은 Engin
 FASTBuild-Dashboard-master\Source 의 FASTBuild.Dashboard.sln를 빌드한 후 Bin 밑의 실행파일을 실행시키면 현재 연결된 pc와 빌드 상황을 볼수 있다.
 
 인크레디빌드보단 느리긴 한것같은데 안하는것보단 빠른듯하다
+
+
 
 
 # 주의사항
