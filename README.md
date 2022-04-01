@@ -29,8 +29,8 @@ FASTBUILDShared폴더 밑에 Cache 폴더를 생성하고 환경변수에 FASTBU
 
 이작업은 host와 remote pc 둘다 해줘야하며 두 pc는 이 등록된 경로가 같아야한다. 
 
-EX) Host pc - FASTBUILD_BROKERAGE_PATH : \\PC_IP\FASTBUILDShared
-    Remote pc - FASTBUILD_BROKERAGE_PATH : \\PC_IP\FASTBUILDShared
+EX) Host pc - FASTBUILD_BROKERAGE_PATH : \\\PC_IP\FASTBUILDShared
+    Remote pc - FASTBUILD_BROKERAGE_PATH : \\\PC_IP\FASTBUILDShared
 
 FASTBuild-Windows-x64-v1.04또한 환경변수 PATH에 등록하여 어디서든 fbuild를 사용할 수 있도록한다. 등록 후 cmd에 fbuild -version 입력 시 버전이 나오면 된것이다.
 
