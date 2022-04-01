@@ -31,3 +31,18 @@ FASTBUILDShared폴더 밑에 Cache 폴더를 생성하고 환경변수에 FASTBU
 
 EX) Host pc - FASTBUILD_BROKERAGE_PATH : \\PC_IP\FASTBUILDShared
     Remote pc - FASTBUILD_BROKERAGE_PATH : \\PC_IP\FASTBUILDShared
+
+FASTBuild-Windows-x64-v1.04또한 환경변수 PATH에 등록하여 어디서든 fbuild를 사용할 수 있도록한다. 등록 후 cmd에 fbuild -version 입력 시 버전이 나오면 된것이다.
+
+# Fast Build 수정
+
+이제 Fast Build를 사용하기 위해서는 약간의 수정이 필요하다.
+fastbuild-ue4.26.2-1.04-ue4\External\SDK\VisualStudio에서 자신이 사용중인 visual studio 버전에 따라 수정할 것이 다르다.
+![화면 캡처 2022-04-01 171235](https://user-images.githubusercontent.com/62869017/161223282-4b0ac22c-a229-4cb0-893e-9961895f5347.png)
+
+![화면 캡처 2022-04-01 171251](https://user-images.githubusercontent.com/62869017/161223291-9044c474-38b5-4641-9afa-3e90f58d6e15.png)
+
+![화면 캡처 2022-04-01 171456](https://user-images.githubusercontent.com/62869017/161223590-7548195f-b544-4502-9666-ccfe8df6ef3c.png)
+Windows Sdk는 옵션이지만 후에 fastbuild 활성화 시에 버전이 다르면 안되기에 windows sdk를 최신으로 설치하여 변경했다.
+
+https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/
