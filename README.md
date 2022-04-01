@@ -46,3 +46,40 @@ fastbuild-ue4.26.2-1.04-ue4\External\SDK\VisualStudio에서 자신이 사용중�
 Windows Sdk는 옵션이지만 후에 fastbuild 활성화 시에 버전이 다르면 안되기에 windows sdk를 최신으로 설치하여 변경했다.
 
 https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/
+
+# Fast Build 활성화
+
+cmd 창을 키고 fastbuild-ue4.26.2-1.04-ue4\Code 이곳으로 이동한 후 
+FBuild.exe All-x64-Release -dist -clean 을 입력한다.
+
+빌드가 정상적으로 완료되었으면 성공
+
+fastbuild-ue4.26.2-1.04-ue4\UnrealEngine 의 Fastbuild.cs, ShaderCompilerFASTBuild.cs 파일을 열어 보면 F:\\Cache 가 있다. 이것을 아까 공유한 FASTBUILD_CACHE_PATH로 변경한다.
+
+이제 fastbuild-ue4.26.2-1.04-ue4 폴더 안에 tmp 폴더가 생성됬다.
+
+fastbuild-ue4.26.2-1.04-ue4\tmp\x64-Release\Tools\FBuild밑에 있는 FBuild/Fbuild.exe와 FBuildWorker/FBuildWorker.exe가 이제 중요하다.
+![1648801360](https://user-images.githubusercontent.com/62869017/161224902-7ab2d78c-a552-4a9d-abb1-2e71b53d3a7a.png)
+
+FBuildWorker.exe 파일은 Remote pc로 옮겨주고 실행시켜 준다.
+ 
+host pc에서는 이 두 파일을 Engine\Extras\ThirdPartyNotUE\FASTBuild\Win64 로 옮겨 준다.
+fastbuild-ue4.26.2-1.04-ue4\UnrealEngine의 4개의 스크립트 파일은 Engine\Source\Programs\UnrealBuildTool\System 밑으로 옮겨준다.
+
+# fastbuild moniter
+
+모든 작업이 끝난 후 FASTBUILD_BROKERAGE_PATH/main/**.windows/밑에 remote pc의 ip파일이 만들어지면 된다.
+언리얼 엔진을 빌드해보면 
+
+![1648801660](https://user-images.githubusercontent.com/62869017/161225960-2837ab88-02f4-4a0a-b7fb-4540494d7d0c.png)
+
+
+![1648801616](https://user-images.githubusercontent.com/62869017/161225969-a87a79d0-1689-4805-ad80-b67841755a73.png)
+
+
+이렇게 출력되며
+
+FASTBuild-Dashboard-master\Source 의 FASTBuild.Dashboard.sln를 빌드한 후 Bin 밑의 실행파일을 실행시키면 현재 연결된 pc와 빌드 상황을 볼수 있다.
+
+인크레디빌드보단 느리긴 한것같은데 안하는것보단 빠른듯하다
+
