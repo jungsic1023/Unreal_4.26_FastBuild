@@ -96,7 +96,22 @@ Engine\Source\Programs\UnrealBuildTool\Executors\Experimental\FASTBuild.cs 파�
 
 저 부분을 true와 ReadWrite로 해야한다.
   
-  
+ 
+캐싱 기능을 키고 처음 빌드하면
+
+![image](https://user-images.githubusercontent.com/62869017/169438949-39896ab2-e106-4609-a875-e51e1e3a26e2.png)
+
+
+stores 즉 저장하고
+
+재빌드하면 
+![image](https://user-images.githubusercontent.com/62869017/169438988-d8ddfa63-4405-4bbf-9d9b-df4aa47ae606.png)
+
+캐시된것을 가져온다.
+
+![image](https://user-images.githubusercontent.com/62869017/169439025-80e771f3-6e99-4766-83ee-ad64ea5f8c88.png)
+
+
 # fastbuild moniter
 
 모든 작업이 끝난 후 FASTBUILD_BROKERAGE_PATH/main/**.windows/밑에 remote pc의 ip파일이 만들어지면 된다.
