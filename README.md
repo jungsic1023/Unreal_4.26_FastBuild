@@ -84,6 +84,19 @@ FBuildWorker.exe 파일은 Remote pc로 옮겨주고 실행시켜 준다.
 host pc에서는 이 두 파일을 Engine\Extras\ThirdPartyNotUE\FASTBuild\Win64 로 옮겨 준다.
 fastbuild-ue4.26.2-1.04-ue4\UnrealEngine의 4개의 스크립트 파일은 Engine\Source\Programs\UnrealBuildTool\System 밑으로 옮겨준다.
 
+
+
+# Fast Build 캐싱기능
+  캐싱 기능을 활용하면 빌드 시간을 대폭 단축시킬 수 있다.
+  가끔 처음빌드 시에는 모든 cpu를 다 사용하다가 두번째 빌드부턴 로컬 cpu로만 빌드하는 경우 캐싱이 적용이 안됬는데 fastbuild는 캐싱을 했다고 생각하고 로컬 cpu로만 캐시 read 중인거라  매우 느리다.
+  
+Engine\Source\Programs\UnrealBuildTool\Executors\Experimental\FASTBuild.cs 파일을 수정해야한다.
+
+![image](https://user-images.githubusercontent.com/62869017/169438731-d3a98901-9c8a-499a-a3a0-68c5a4b4af87.png)
+
+저 부분을 true와 ReadWrite로 해야한다.
+  
+  
 # fastbuild moniter
 
 모든 작업이 끝난 후 FASTBUILD_BROKERAGE_PATH/main/**.windows/밑에 remote pc의 ip파일이 만들어지면 된다.
