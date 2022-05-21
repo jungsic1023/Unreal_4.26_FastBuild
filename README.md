@@ -1,12 +1,12 @@
 # FastBuild
 
 ## 목차
-###  기본 설정
-### Fast Build 수정
-### Fast Build 활성화
-### Fast Build 캐싱기능
-### Fastbuild moniter
-### 주의사항
+### 1. 기본 설정
+### 2. Fast Build 수정
+### 3. Fast Build 활성화
+### 4. Fast Build 캐싱기능
+### 5. Fastbuild moniter
+### 6. 주의사항
 
 
 설치환경 Visual Studio 2019 pro
