@@ -16,7 +16,7 @@ Windows SDK - 10.0.22000.0
 windows와 mac은 서로연결불가능하다
 
 
-### : 기본 설정
+##  기본 설정
 ### : Fast Build 수정
 ### : Fast Build 활성화
 ### : Fast Build 캐싱기능
