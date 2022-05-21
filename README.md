@@ -15,6 +15,16 @@ Windows SDK - 10.0.22000.0
 
 windows와 mac은 서로연결불가능하다
 
+
+### : 기본 설정
+### : Fast Build 수정
+### : Fast Build 활성화
+### : Fast Build 캐싱기능
+### : Fastbuild moniter
+### : 주의사항
+
+
+
 # 기본 설정
 
 ![1648799929](https://user-images.githubusercontent.com/62869017/161221116-df056c97-b30a-4537-88a3-64ba4a4bc343.png)
