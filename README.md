@@ -1,5 +1,14 @@
 # FastBuild
 
+## 목차
+###  기본 설정
+### Fast Build 수정
+### Fast Build 활성화
+### Fast Build 캐싱기능
+### Fastbuild moniter
+### 주의사항
+
+
 설치환경 Visual Studio 2019 pro
 
 Unreal Engine - 4.26
@@ -14,15 +23,6 @@ Windows SDK - 10.0.22000.0
 언리얼 빌드를 빠르게 하기 위하여 로컬 pc와 remote pc를 연결하여 분산 빌드 하는 시스템
 
 windows와 mac은 서로연결불가능하다
-
-
-##  기본 설정
-### : Fast Build 수정
-### : Fast Build 활성화
-### : Fast Build 캐싱기능
-### : Fastbuild moniter
-### : 주의사항
-
 
 
 # 기본 설정
